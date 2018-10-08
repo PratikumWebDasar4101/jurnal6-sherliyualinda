@@ -33,6 +33,7 @@ include_once 'koneksi.php';
 		 		<td><?php echo $row['hobby'];  ?></td>
 		 		<td><?php echo $row['fakultas'];  ?></td>
 		 		<td><?php echo $row['alamat'];  ?></td>
+		 		td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a> | <a href="delete.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')">Delete</a></td>
 		 	</tr>
 		 	<?php
 		 		}
